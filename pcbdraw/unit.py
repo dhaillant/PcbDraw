@@ -36,7 +36,7 @@ def read_resistance(value: str) -> Decimal:
                 break
         if numerical_value is None:
             # If this fails, a decimal.InvalidOperation is raised which is handled by the Exception catch
-            numerical_value = Decimal(prefix)
+            numerical_value = Decimal(p_value)
         return numerical_value
     except Exception:
         pass
