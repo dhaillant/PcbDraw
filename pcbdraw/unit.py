@@ -21,12 +21,12 @@ def read_resistance(value: str) -> Decimal:
     p_value = erase(value, ["Ω", "Ohms", "Ohm"]).strip()
     p_value = p_value.replace(" ", "") # Sometimes there are spaces after decimal place
     unit_prefixes = {
-        "m": Decimal(1e-3),
-        "R": Decimal(1),
-        "K": Decimal(1e3),
-        "k": Decimal(1e3),
-        "M": Decimal(1e6),
-        "G": Decimal(1e9)
+        "m": Decimal('1e-3'),
+        "R": Decimal('1'),
+        "K": Decimal('1e3'),
+        "k": Decimal('1e3'),
+        "M": Decimal('1e6'),
+        "G": Decimal('1e9')
     }
     try:
         numerical_value = None
